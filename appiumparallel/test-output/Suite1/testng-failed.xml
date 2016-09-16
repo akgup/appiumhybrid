@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]" parallel="tests">
+  <parameter name="port" value="4733"/>
+  <parameter name="device" value="192.168.1.6:5555"/>
+  <test name="Run on MotoG(failed)" parallel="tests">
+    <parameter name="port" value="4723"/>
+    <parameter name="device" value="192.168.1.7:5555"/>
+    <classes>
+      <class name="com.appium.test.GmailSignupTest">
+        <methods>
+          <include name="VerifyAlreadyTakenMailIdError"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.appium.test.GmailSignupTest -->
+    </classes>
+  </test> <!-- Run on MotoG(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

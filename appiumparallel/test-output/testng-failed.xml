@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Appium Suite]" parallel="tests">
+  <parameter name="port" value="4733"/>
+  <parameter name="device" value="b7bbb2ea7d03"/>
+  <parameter name="version" value="Android"/>
+  <parameter name="platform" value="6.1"/>
+  <test name="Run on Redmi(failed)" parallel="tests">
+    <parameter name="port" value="4733"/>
+    <parameter name="device" value="b7bbb2ea7d03"/>
+    <parameter name="version" value="Android"/>
+    <parameter name="platform" value="6.1"/>
+    <classes>
+      <class name="com.appium.parallel.ParallelExecution">
+        <methods>
+          <include name="verifyMandatoryLoginFields"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.appium.parallel.ParallelExecution -->
+    </classes>
+  </test> <!-- Run on Redmi(failed) -->
+  <test name="Run on MotoG(failed)" parallel="tests">
+    <parameter name="port" value="4723"/>
+    <parameter name="device" value="TA9330527R"/>
+    <parameter name="version" value="Android"/>
+    <parameter name="platform" value="5.1"/>
+    <classes>
+      <class name="com.appium.parallel.ParallelExecution">
+        <methods>
+          <include name="verifyMandatoryLoginFields"/>
+          <include name="tearDown"/>
+          <include name="verifyMandatorySignUpPageFields"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.appium.parallel.ParallelExecution -->
+    </classes>
+  </test> <!-- Run on MotoG(failed) -->
+</suite> <!-- Failed suite [Appium Suite] -->

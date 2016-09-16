@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Appium Suite" verbose="1" parallel="tests"
+	thread-count="2">
+	<!-- <listeners> <listener class-name="org.uncommons.reportng.HTMLReporter" 
+		/> <listener class-name="org.uncommons.reportng.JUnitXMLReporter" /> </listeners> -->
+
+ 
+	<test name="Run on MotoG">
+		<parameter name="port" value="4723" />
+		<parameter name="device" value="TA9330527R"></parameter>
+		<parameter name="version" value="Android"></parameter>
+		<parameter name="platform" value="5.1"></parameter>
+		<classes>
+			<class name="com.appium.parallel.ParallelExecution"></class>
+		</classes>
+	</test> 
+
+	<test name="Run on Redmi">
+		<parameter name="port" value="4733" />
+		<parameter name="device" value="b7bbb2ea7d03"></parameter>
+		<parameter name="version" value="Android"></parameter>
+		<parameter name="platform" value="6.1"></parameter>
+		<classes>
+
+			<class name="com.appium.parallel.ParallelExecution"></class>
+		</classes>
+	</test>
+
+</suite>

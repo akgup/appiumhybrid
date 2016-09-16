@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Demo Test Suite"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="91.704">
+  <properties />
+  
+  
+            <testcase name="VerifyPasswdMismatchError" time="43.999" classname="com.appium.test.GmailSignupTest" />
+                <testcase name="VerifyPhoneNumberFormatError" time="28.433" classname="com.appium.test.GmailSignupTest" />
+                <testcase name="VerifyAlreadyTakenMailIdError" time="19.272" classname="com.appium.test.GmailSignupTest" />
+      
+</testsuite>
